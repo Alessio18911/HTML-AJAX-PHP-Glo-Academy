@@ -1,0 +1,17 @@
+.button-round {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid $pink2;
+  border-radius: 50%;
+
+  svg {
+    width: 21px;
+    height: 8px;
+    margin: auto;
+    color: $pink2;
+  }
+}
+
+
