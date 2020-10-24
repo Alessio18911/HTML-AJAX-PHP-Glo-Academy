@@ -1,0 +1,63 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 68px 0 0 5px;
+  width: 316px;
+  height: 100%;
+  text-align: center;
+  background-color: $white;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bg-big.png) no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0.26;
+  }
+
+  &::after {
+    width: 286px;
+    height: 188px;
+    bottom: 37px;
+    left: 3px;
+    background: url(../../img/prize-big.png) no-repeat 50% 50%;
+  }
+
+  &__title,
+  &__result,
+  &__promo {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin: 0 0 23px;
+  }
+
+  &__result {
+    margin: 0 0 94px;
+    font-size: 73px;
+    font-weight: 700;
+    color: $pink2;
+  }
+
+  &__promo {
+    width: 210px;
+    font-size: 29px;
+    line-height: 1.2;
+    font-family: 'Nautilus Pompilius', Arial, serif;
+  }
+}
