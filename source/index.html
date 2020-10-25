@@ -12,10 +12,8 @@
       <include src="dist/img/sprite.svg"></include>
     </div>
     <div class="overlay">
-      <div class="quiz" style="padding: 100px;
-      padding-left: 84px;
-      padding-top: 88px;">
-        <!-- <div class="quiz__header">
+      <div class="quiz">
+        <div class="quiz__header">
             <a href="index.html" class="quiz__logo logo">
               <img src="img/logo.png" alt="Логотип">
             </a>
@@ -26,8 +24,7 @@
           <p class="sidebar__title">Тест пройден на</p>
           <span class="sidebar__result">25%</span>
           <p class="sidebar__promo">Узнайте, какая скидка ждет вас<br> в конце теста!</p>
-        </div> -->
-
+        </div>
 
 
       </div>
@@ -115,6 +112,19 @@
         <span class="input-text__label">Как к Вам обращаться?</span>
         <input class="input-text__input" type="text" value="">
       </label>
+    </template>
+
+    <template id="select">
+      <div class="select">
+        <svg width="17" height="12" fill="currentColor">
+          <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+        </svg>
+        <select name="select" id="select-field">
+          <option value="call" selected>Позвонить</option>
+          <option value="email">Написать по email</option>
+          <option value="messanger">Связаться в мессенджере</option>
+        </select>
+      </div>
     </template>
     <!-- ЭЛЕМЕНТЫ -->
 
