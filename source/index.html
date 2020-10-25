@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -20,6 +21,130 @@
           <p>Подcкажем, какая уборка подходит для Вас</p>
         </div>
         <hr>
+        <form class="form" action="" method="post">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <fieldset class="swiper-slide">
+                <legend>Ваша квартира после ремонта?</legend>
+                <div class="form__fieldset-wrapper">
+                  <div class="radio">
+                    <input type="radio" class="radio__input visually-hidden" name="radio_1" id="radio-field_1">
+                    <label for="radio-field_1" class="radio__label">
+                      <img src="img/pic1.jpg" alt="">
+                      <span>Да</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" class="radio__input visually-hidden" name="radio_1" id="radio-field_2">
+                    <label for="radio-field_2" class="radio__label">
+                      <img src="img/pic2.jpg" alt="">
+                      <span>Нет</span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="swiper-slide">
+                <legend>Как давно у Вас проводилась генеральная уборка??</legend>
+                <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not_long_ago" id="how-long-ago_1">
+                    <label class="checkbox__label" for="how-long-ago_1">
+                      <svg width="36" height="32" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                      <span>Недавно</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="6_month_ago" id="6-month-ago">
+                    <label class="checkbox__label" for="6-month-ago">
+                      <svg width="36" height="32" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                      <span>Полгода назад</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="more_1_year" id="more-1-year">
+                    <label class="checkbox__label" for="more-1-year">
+                      <svg width="36" height="32" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                      <span>Более года назад</span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="swiper-slide">
+                <legend>Укажите площадь Вашей квартиры/дома?</legend>
+                <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_less_50" id="house-area-less_50">
+                    <label class="checkbox__label" for="house-area-less_50">
+                      <svg width="36" height="32" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                      <span>Менее 50 кв м</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_less_100" id="house-area-less-100">
+                    <label class="checkbox__label" for="house-area-less-100">
+                      <svg width="36" height="32" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                      <span>От 50 до 100 кв м</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_more_100" id="house-area-more-100">
+                    <label class="checkbox__label" for="house-area-more-100">
+                      <svg width="36" height="32" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                      <span>Более 100 кв м</span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="swiper-slide">
+                <legend>Требуется ли мытье окон?</legend>
+                <div class="form__fieldset-wrapper">
+                  <div class="radio">
+                    <input type="radio" class="radio__input visually-hidden" name="radio_2" id="radio-field_3">
+                    <label for="radio-field_3" class="radio__label">
+                      <img src="img/pic3.jpg" alt="">
+                      <span>Да</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" class="radio__input visually-hidden" name="radio_2" id="radio-field_4">
+                    <label for="radio-field_4" class="radio__label">
+                      <img src="img/pic4.jpg" alt="">
+                      <span>Нет</span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__controls">
+              <button type="button" class="form__controls-btn form__controls-btn-prev button-round">
+                <svg width="21" height="8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button type="button" class="form__controls-btn form__controls-btn-next button button--with-arrow">
+                <span>Далее</span>
+                <svg width="21" height="8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
         <div class="sidebar">
           <p class="sidebar__title">Тест пройден на</p>
           <span class="sidebar__result">25%</span>
@@ -133,6 +258,7 @@
       <div class="bonus">При заказе 4 поддерживающих уборок, 5 уборка в подарок</div>
     </template>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

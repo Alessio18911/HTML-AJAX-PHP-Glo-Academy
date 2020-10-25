@@ -5,12 +5,23 @@
   background-color: transparent;
   border: 1px solid $pink2;
   border-radius: 50%;
+  transition: border 0.25s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $pink1;
+
+    svg {
+      color: $pink1;
+    }
+  }
 
   svg {
     width: 21px;
     height: 8px;
     margin: auto;
     color: $pink2;
+    transition: color 0.25s ease-in-out;
   }
 }
 
