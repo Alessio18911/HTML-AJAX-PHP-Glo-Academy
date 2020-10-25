@@ -9,38 +9,17 @@
   width: 316px;
   height: 100%;
   text-align: center;
-  background-color: $white;
+  background: url(../../img/bg-big.png) no-repeat 50% 50%;
+  background-size: cover;
 
-
-  &::before,
   &::after {
     content: "";
     position: absolute;
-  }
-
-  &::before {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../../img/bg-big.png) no-repeat 50% 50%;
-    background-size: cover;
-    opacity: 0.26;
-  }
-
-  &::after {
     width: 286px;
     height: 188px;
     bottom: 37px;
     left: 3px;
     background: url(../../img/prize-big.png) no-repeat 50% 50%;
-  }
-
-  &__title,
-  &__result,
-  &__promo {
-    position: relative;
-    z-index: 1;
   }
 
   &__title {
