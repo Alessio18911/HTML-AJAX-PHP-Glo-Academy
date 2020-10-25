@@ -2,27 +2,25 @@
   color: $black;
   letter-spacing: -1.1px;
 
-  &__input:checked + label svg {
-    opacity: 1;
+  &__input:checked + label::before {
+    background: url(../../img/icon-tick.svg) 50% 50%;
+    background-size: cover;
   }
 
   &__label {
-    position: relative;
+    display: flex;
+    align-items: center;
 
     &::before {
       content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 18px;
       height: 18px;
+      margin-right: 14px;
       border: 1px solid $grey1;
     }
 
-    svg {
-      margin-right: 14px;
-      color: $grey1;
-      opacity: 0;
+    span {
+      padding-top: 1px;
     }
   }
 }
