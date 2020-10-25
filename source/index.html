@@ -12,7 +12,9 @@
       <include src="dist/img/sprite.svg"></include>
     </div>
     <div class="overlay">
-      <div class="quiz">
+      <div class="quiz" style="padding: 100px;
+      padding-left: 84px;
+      padding-top: 88px;">
         <!-- <div class="quiz__header">
             <a href="index.html" class="quiz__logo logo">
               <img src="img/logo.png" alt="Логотип">
@@ -25,12 +27,7 @@
           <span class="sidebar__result">25%</span>
           <p class="sidebar__promo">Узнайте, какая скидка ждет вас<br> в конце теста!</p>
         </div> -->
-        <div class="checkbox">
-          <input class="checkbox__input visually-hidden" type="checkbox" name="agree" id="agree-checkbox">
-          <label class="checkbox__label" for="agree-checkbox">
-            <span>Даю согласие на обработку персональных данных</span>
-          </label>
-        </div>
+
       </div>
     </div>
 
@@ -78,6 +75,34 @@
       <a href="index.html" class="logo">
         <img src="img/logo.png" alt="Логотип">
       </a>
+    </template>
+
+    <template id="checkbox">
+      <div class="checkbox">
+        <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox-field" id="checkbox">
+        <label class="checkbox__label" for="checkbox">
+          <svg width="36" height="32" fill="currentColor">
+            <use xlink:href="img/sprite.svg#icon-tick"></use>
+          </svg>
+          <span>Менее 50 кв м</span>
+        </label>
+      </div>
+    </template>
+
+    <template id="checkbox-simple">
+      <div class="checkbox-simple">
+        <input class="checkbox-simple__input visually-hidden" type="checkbox" name="agree" id="agree-checkbox">
+        <label class="checkbox-simple__label" for="agree-checkbox">
+          <span>Даю согласие на обработку персональных данных</span>
+        </label>
+      </div>
+    </template>
+
+    <template id="input-text">
+      <label class="input-text">
+        <span class="input-text__label">Как к Вам обращаться?</span>
+        <input class="input-text__input" type="text" value="">
+      </label>
     </template>
     <!-- ЭЛЕМЕНТЫ -->
 

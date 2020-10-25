@@ -1,0 +1,17 @@
+.input-text {
+  display: block;
+  font-size: 14px;
+
+  &__label {
+    display: block;
+    margin-bottom: 11px;
+  }
+
+  &__input {
+    height: 47px;
+    width: 396px;
+    padding: 0 14px 0;
+    border: 1px solid $grey1;
+    border-radius: 5px;
+  }
+}
