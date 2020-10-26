@@ -1,18 +1,46 @@
-'use strict';
+"use strict";
 
-var mySwiper = new Swiper('.swiper-container', {
-  direction: 'horizontal',
+function createSidebar(parentElement) {
+  const template = document.querySelector('#sidebar').content;
+  const sidebar = template.cloneNode(true).querySelector('.sidebar');
+  parentElement.append(sidebar);
+}
+
+function getActiveSlideParams() {
+  const activeSlide = document.querySelector(".swiper-slide-active");
+  let areaLabel = activeSlide
+    .getAttribute("aria-label")
+    .replace(/\s/g, "")
+    .split("/");
+
+  return [areaLabel[0], areaLabel[1]];
+}
+
+function toggleSidebar(slideParams, parentElement) {
+  const activeSlideNumber = slideParams[0];
+  const sliderLength = slideParams[1];
+  const sidebar = document.querySelector('.sidebar');
+
+  if (!sidebar) createSidebar(parentElement);
+  if (sidebar && activeSlideNumber === sliderLength ) document.querySelector(".sidebar").remove();
+}
+
+const mySwiper = new Swiper(".swiper-container", {
+  direction: "horizontal",
   loop: false,
 
   navigation: {
-    nextEl: '.form__controls-btn-next',
-    prevEl: '.form__controls-btn-prev',
-    disabledClass: 'form__controls-btn--disabled'
-  }
+    nextEl: ".form__controls-btn-next",
+    prevEl: ".form__controls-btn-prev",
+    disabledClass: "form__controls-btn--disabled",
+  },
 });
 
-mySwiper.on('reachEnd', function() {
-  const sidebar = document.querySelector('.sidebar');
-  if (sidebar) sidebar.remove();
+const quiz = document.querySelector('.quiz');
+createSidebar(quiz);
 
+mySwiper.on("slideChange", function () {
+  new Promise(resolve => resolve())
+    .then(() => getActiveSlideParams())
+    .then(slideInfo => toggleSidebar(slideInfo, quiz));
 });
