@@ -1,16 +1,36 @@
 .form {
-  font-size: 20px;
   line-height: 27px;
   color: $black;
+
+  &__slide {
+    padding: 126px 0 0;
+
+    &:last-of-type {
+      padding: 163px 0 0;
+    }
+  }
+
+  &__result-title {
+    margin: 0 0 18px;
+    font-size: 27px;
+    font-weight: 400;
+  }
+
+  &__result-text {
+    margin: 0 0 12px;
+    font-size: 16px;
+  }
+
+  &__result-result {
+    font-size: 20px;
+    font-weight: 600;
+    color: $pink1;
+  }
 
   legend {
     padding: 60px 0 0;
     font-weight: 700;
     color: $grey1;
-  }
-
-  fieldset {
-    padding: 30px 0 0 68px;
   }
 
   &__fieldset-wrapper {
@@ -31,7 +51,35 @@
     }
   }
 
+  fieldset {
+    padding: 30px 0 0 68px;
+  }
+
+  &__result {
+    padding: 0 0 182px 63px;
+    color: $grey1;
+
+    + fieldset {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 587px;
+      height: 99%;
+      padding: 151px 0 0 64px;
+      background-color: $grey4;
+      box-shadow: 0px 4px 4px rgba($black, 0.25);
+    }
+  }
+
+  &__bonus {
+    padding: 26px 0 0;
+  }
+
   &__controls {
+    position: absolute;
+    bottom: 33px;
+    right: 0;
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     padding: 45px 375px 20px 0;
@@ -40,7 +88,8 @@
 
   &__controls-btn {
     position: static;
-    transition: opacity 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out, box-shadow 0.25s ease-in-out,
+      border-color 0.25s ease-in-out;
 
     &--disabled {
       opacity: 0.4;
@@ -50,5 +99,21 @@
 
   &__controls-btn-prev {
     margin-right: 28px;
+  }
+
+  &__input-text {
+    margin: 0 0 16px;
+
+    .input-text__label {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__select {
+    margin: 0 0 28px;
+  }
+
+  &__submit-btn {
+    margin: 0 0 26px;
   }
 }

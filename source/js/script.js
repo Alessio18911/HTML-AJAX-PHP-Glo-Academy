@@ -19,10 +19,11 @@ function getActiveSlideParams() {
 function toggleSidebar(slideParams, parentElement) {
   const activeSlideNumber = slideParams[0];
   const sliderLength = slideParams[1];
-  const sidebar = document.querySelector('.sidebar');
 
-  if (!sidebar) createSidebar(parentElement);
-  if (sidebar && activeSlideNumber === sliderLength ) document.querySelector(".sidebar").remove();
+  if (activeSlideNumber === sliderLength ) {
+    document.querySelector(".sidebar").remove();
+    document.querySelector(".form__controls").remove();
+  }
 }
 
 const mySwiper = new Swiper(".swiper-container", {

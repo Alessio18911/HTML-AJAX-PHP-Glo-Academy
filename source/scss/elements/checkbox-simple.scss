@@ -1,6 +1,5 @@
 .checkbox-simple {
   color: $black;
-  letter-spacing: -1.1px;
 
   &__input:checked + label::before {
     background: url(../../img/icon-tick.svg) 50% 50%;

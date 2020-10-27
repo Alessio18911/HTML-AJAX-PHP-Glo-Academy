@@ -24,111 +24,155 @@
         <form class="form" action="" method="post">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <fieldset class="swiper-slide">
-                <legend>Ваша квартира после ремонта?</legend>
-                <div class="form__fieldset-wrapper">
-                  <div class="radio">
-                    <input type="radio" class="radio__input visually-hidden" name="radio_1" id="radio-field_1">
-                    <label for="radio-field_1" class="radio__label">
-                      <img src="img/pic1.jpg" alt="">
-                      <span>Да</span>
-                    </label>
+              <div class="swiper-slide form__slide">
+                <fieldset>
+                  <legend>Ваша квартира после ремонта?</legend>
+                  <div class="form__fieldset-wrapper">
+                    <div class="radio">
+                      <input type="radio" class="radio__input visually-hidden" name="radio_1" id="radio-field_1">
+                      <label for="radio-field_1" class="radio__label">
+                        <img src="img/pic1.jpg" alt="">
+                        <span>Да</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" class="radio__input visually-hidden" name="radio_1" id="radio-field_2">
+                      <label for="radio-field_2" class="radio__label">
+                        <img src="img/pic2.jpg" alt="">
+                        <span>Нет</span>
+                      </label>
+                    </div>
                   </div>
-                  <div class="radio">
-                    <input type="radio" class="radio__input visually-hidden" name="radio_1" id="radio-field_2">
-                    <label for="radio-field_2" class="radio__label">
-                      <img src="img/pic2.jpg" alt="">
-                      <span>Нет</span>
-                    </label>
+                </fieldset>
+              </div>
+              <div class="swiper-slide form__slide">
+                <fieldset>
+                  <legend>Как давно у Вас проводилась генеральная уборка??</legend>
+                  <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not_long_ago" id="how-long-ago_1">
+                      <label class="checkbox__label" for="how-long-ago_1">
+                        <svg width="36" height="32" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                        <span>Недавно</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="6_month_ago" id="6-month-ago">
+                      <label class="checkbox__label" for="6-month-ago">
+                        <svg width="36" height="32" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                        <span>Полгода назад</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="more_1_year" id="more-1-year">
+                      <label class="checkbox__label" for="more-1-year">
+                        <svg width="36" height="32" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                        <span>Более года назад</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="swiper-slide form__slide">
+                <fieldset>
+                  <legend>Укажите площадь Вашей квартиры/дома?</legend>
+                  <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_less_50" id="house-area-less_50">
+                      <label class="checkbox__label" for="house-area-less_50">
+                        <svg width="36" height="32" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                        <span>Менее 50 кв м</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_less_100" id="house-area-less-100">
+                      <label class="checkbox__label" for="house-area-less-100">
+                        <svg width="36" height="32" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                        <span>От 50 до 100 кв м</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_more_100" id="house-area-more-100">
+                      <label class="checkbox__label" for="house-area-more-100">
+                        <svg width="36" height="32" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                        <span>Более 100 кв м</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="swiper-slide form__slide">
+                <fieldset>
+                  <legend>Требуется ли мытье окон?</legend>
+                  <div class="form__fieldset-wrapper">
+                    <div class="radio">
+                      <input type="radio" class="radio__input visually-hidden" name="radio_2" id="radio-field_3">
+                      <label for="radio-field_3" class="radio__label">
+                        <img src="img/pic3.jpg" alt="">
+                        <span>Да</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" class="radio__input visually-hidden" name="radio_2" id="radio-field_4">
+                      <label for="radio-field_4" class="radio__label">
+                        <img src="img/pic4.jpg" alt="">
+                        <span>Нет</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="swiper-slide form__slide">
+                <div class="form__result">
+                  <h2 class="form__result-title">Заполните форму, что бы получить подарок!</h2>
+                  <p class="form__result-text">Мы проанализировали Ваши ответы. Результат теста:</p>
+                  <p class="form__result-result">Требуется поддерживающая уборка</p>
+                  <div class="bonus form__bonus">
+                    <p class="bonus__text">Ваш бонус:</p>
+                    <p class="bonus__bonus">При заказе 4 поддерживающих уборок, 5 уборка в подарок</p>
                   </div>
                 </div>
-              </fieldset>
-
-              <fieldset class="swiper-slide">
-                <legend>Как давно у Вас проводилась генеральная уборка??</legend>
-                <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
-                  <div class="checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="not_long_ago" id="how-long-ago_1">
-                    <label class="checkbox__label" for="how-long-ago_1">
-                      <svg width="36" height="32" fill="currentColor">
-                        <use xlink:href="img/sprite.svg#icon-tick"></use>
-                      </svg>
-                      <span>Недавно</span>
+                <fieldset>
+                  <label class="input-text form__input-text">
+                    <span class="input-text__label">Как к Вам обращаться?</span>
+                    <input class="input-text__input" type="text" value="">
+                  </label>
+                  <label class="input-text form__input-text">
+                    <span class="input-text__label">Номер телефона*:</span>
+                    <input class="input-text__input" type="text" value="">
+                  </label>
+                  <div class="select form__select">
+                    <svg width="17" height="12" fill="currentColor">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                    <select name="select" id="select-field">
+                      Способ связи:
+                      <option value="call" selected>Позвонить</option>
+                      <option value="email">Viber</option>
+                      <option value="messanger">What'sApp</option>
+                    </select>
+                  </div>
+                  <button type="button" class="button form__submit-btn">Получить результаты</button>
+                  <div class="checkbox-simple">
+                    <input class="checkbox-simple__input visually-hidden" type="checkbox" name="agree" id="agree-checkbox" checked>
+                    <label class="checkbox-simple__label" for="agree-checkbox">
+                      <span>Даю согласие на обработку персональных данных</span>
                     </label>
                   </div>
-                  <div class="checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="6_month_ago" id="6-month-ago">
-                    <label class="checkbox__label" for="6-month-ago">
-                      <svg width="36" height="32" fill="currentColor">
-                        <use xlink:href="img/sprite.svg#icon-tick"></use>
-                      </svg>
-                      <span>Полгода назад</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="more_1_year" id="more-1-year">
-                    <label class="checkbox__label" for="more-1-year">
-                      <svg width="36" height="32" fill="currentColor">
-                        <use xlink:href="img/sprite.svg#icon-tick"></use>
-                      </svg>
-                      <span>Более года назад</span>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-
-              <fieldset class="swiper-slide">
-                <legend>Укажите площадь Вашей квартиры/дома?</legend>
-                <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
-                  <div class="checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_less_50" id="house-area-less_50">
-                    <label class="checkbox__label" for="house-area-less_50">
-                      <svg width="36" height="32" fill="currentColor">
-                        <use xlink:href="img/sprite.svg#icon-tick"></use>
-                      </svg>
-                      <span>Менее 50 кв м</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_less_100" id="house-area-less-100">
-                    <label class="checkbox__label" for="house-area-less-100">
-                      <svg width="36" height="32" fill="currentColor">
-                        <use xlink:href="img/sprite.svg#icon-tick"></use>
-                      </svg>
-                      <span>От 50 до 100 кв м</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="house_area_more_100" id="house-area-more-100">
-                    <label class="checkbox__label" for="house-area-more-100">
-                      <svg width="36" height="32" fill="currentColor">
-                        <use xlink:href="img/sprite.svg#icon-tick"></use>
-                      </svg>
-                      <span>Более 100 кв м</span>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-
-              <fieldset class="swiper-slide">
-                <legend>Требуется ли мытье окон?</legend>
-                <div class="form__fieldset-wrapper">
-                  <div class="radio">
-                    <input type="radio" class="radio__input visually-hidden" name="radio_2" id="radio-field_3">
-                    <label for="radio-field_3" class="radio__label">
-                      <img src="img/pic3.jpg" alt="">
-                      <span>Да</span>
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <input type="radio" class="radio__input visually-hidden" name="radio_2" id="radio-field_4">
-                    <label for="radio-field_4" class="radio__label">
-                      <img src="img/pic4.jpg" alt="">
-                      <span>Нет</span>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
+                </fieldset>
+              </div>
             </div>
             <div class="form__controls">
               <button type="button" class="form__controls-btn form__controls-btn-prev button-round">
@@ -251,7 +295,10 @@
 
     <!-- КОМПОНЕНТЫ -->
     <template id="bonus">
-      <div class="bonus">При заказе 4 поддерживающих уборок, 5 уборка в подарок</div>
+      <div class="bonus">
+        <p class="bonus__text">Ваш бонус:</p>
+        <p class="bonus__bonus">При заказе 4 поддерживающих уборок, 5 уборка в подарок</p>
+      </div>
     </template>
 
     <template id="sidebar">
