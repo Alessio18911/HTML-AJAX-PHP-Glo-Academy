@@ -16,13 +16,14 @@ function getActiveSlideParams() {
   return [areaLabel[0], areaLabel[1]];
 }
 
-function toggleSidebar(slideParams, parentElement) {
+function toggleSidebar(slideParams) {
   const activeSlideNumber = slideParams[0];
   const sliderLength = slideParams[1];
 
   if (activeSlideNumber === sliderLength ) {
     document.querySelector(".sidebar").remove();
     document.querySelector(".form__controls").remove();
+    mySwiper.allowSlidePrev = mySwiper.allowSlideNext = false;
   }
 }
 
@@ -43,5 +44,5 @@ createSidebar(quiz);
 mySwiper.on("slideChange", function () {
   new Promise(resolve => resolve())
     .then(() => getActiveSlideParams())
-    .then(slideInfo => toggleSidebar(slideInfo, quiz));
+    .then(slideInfo => toggleSidebar(slideInfo));
 });

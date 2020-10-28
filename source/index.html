@@ -147,22 +147,24 @@
                 <fieldset>
                   <label class="input-text form__input-text">
                     <span class="input-text__label">Как к Вам обращаться?</span>
-                    <input class="input-text__input" type="text" value="">
+                    <input class="input-text__input" name="name" type="text" value="">
                   </label>
                   <label class="input-text form__input-text">
                     <span class="input-text__label">Номер телефона*:</span>
-                    <input class="input-text__input" type="text" value="">
+                    <input class="input-text__input" type="text" name="phone" value="">
                   </label>
                   <div class="select form__select">
-                    <svg width="17" height="12" fill="currentColor">
-                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                    </svg>
-                    <select name="select" id="select-field">
-                      Способ связи:
-                      <option value="call" selected>Позвонить</option>
-                      <option value="email">Viber</option>
-                      <option value="messanger">What'sApp</option>
-                    </select>
+                    <label class="select__label" for="select">Способ связи:</label>
+                    <div class="select__wrapper">
+                      <svg width="17" height="12" fill="currentColor">
+                        <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                      </svg>
+                      <select class="select__select" name="how_to_contact" id="select">
+                        <option value="call" selected>Позвонить</option>
+                        <option value="email">Viber</option>
+                        <option value="messanger">What'sApp</option>
+                      </select>
+                    </div>
                   </div>
                   <button type="button" class="button form__submit-btn">Получить результаты</button>
                   <div class="checkbox-simple">
@@ -279,16 +281,19 @@
       </label>
     </template>
 
-    <template id="select">
+    <template id="select-field">
       <div class="select">
-        <svg width="17" height="12" fill="currentColor">
-          <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-        </svg>
-        <select name="select" id="select-field">
-          <option value="call" selected>Позвонить</option>
-          <option value="email">Написать по email</option>
-          <option value="messanger">Связаться в мессенджере</option>
-        </select>
+        <label class="select__label" for="select">Способ связи:</label>
+        <div class="select__wrapper">
+          <svg width="17" height="12" fill="currentColor">
+            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+          </svg>
+          <select class="select__select" name="select" id="select">
+            <option value="call" selected>Позвонить</option>
+            <option value="email">Viber</option>
+            <option value="messanger">What'sApp</option>
+          </select>
+        </div>
       </div>
     </template>
     <!-- ЭЛЕМЕНТЫ -->
